@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'apps.users',
+    'apps.cards',
+    'apps.decks',
     'graphene_django',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -130,5 +132,5 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'users.User'
 
 GRAPHENE = {
-    'SCHEMA': 'app.schema.schema' # Where your Graphene schema lives
+    'SCHEMA': 'apps.schema.schema.schema' # Where your Graphene schema lives
 }
